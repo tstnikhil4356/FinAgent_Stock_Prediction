@@ -6,8 +6,8 @@ type ModelRow = {
   model: string;
   baseline_f1: number;
   hybrid_f1: number;
-  baseline_acc: number;
-  hybrid_acc: number;
+  baseline_acc?: number;
+  hybrid_acc?: number;
 };
 
 function CustomTooltip({ active, payload, label }: any) {
