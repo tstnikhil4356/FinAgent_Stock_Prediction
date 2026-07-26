@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: finagent-india-api
+    env: python
+    plan: free            # no local ML model in RAM anymore -> free tier is enough
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: NEWSAPI_KEY
+        sync: false
+      - key: GNEWS_KEY
+        sync: false
+      - key: MARKETAUX_KEY
+        sync: false
+      - key: HF_API_TOKEN
+        sync: false
