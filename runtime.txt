@@ -1,0 +1,2 @@
+cd ~/Downloads/finagent-indian/backend
+echo "python-3.11.9" > runtime.txt
