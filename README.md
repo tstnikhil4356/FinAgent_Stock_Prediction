@@ -22,6 +22,9 @@ Science, Group 03), localised to Indian stocks and Indian financial news.
 > Granger causality validation to generate transparent BUY/HOLD/SELL
 > signals with confidence thresholds and supporting news headlines."*
 
+![Screenshot 1](finagentimages/1.png)
+![Screenshot 2](finagentimages/2.png)
+
 | Resume claim | Where it lives in this repo |
 |---|---|
 | Z-score / RSI / Bollinger / EMA anomaly detection | `backend/app/pipeline/agent1_anomaly.py` |
